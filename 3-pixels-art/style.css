@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.color {
+  border: solid black 1px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+body {
+  height: 100vh;
+  /* background-image: linear-gradient(135deg, rgb(153, 148, 148) 20%, grey 95%); */
+  font-family: 'VT323', monospace;
+  height: 200px;
+  /* background: linear-gradient(to right, #f94144, #f3722c, #f8961e, #f9844a, #f9c74f); */
+  background: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6, #caffbf, #9bf6ff, #a0c4ff, #bdb2ff, #ffc6ff, #fffffc);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+}
+
+#red {
+  color: red;
+}
+
+#orange {
+  color: orange;
+}
+
+#yellow {
+  color: yellow;
+}
+
+#green {
+  color: green;
+}
+
+#blue {
+  color: blue;
+}
+
+#indigo {
+  color: indigo;
+}
+
+.c0 {
+  background-color: black;
+}
+
+.c1 {
+  background-color: rgb(52, 107, 158);
+}
+
+.c2 {
+  background-color: rgb(189, 35, 130);
+}
+
+.c3 {
+  background-color: rgb(206, 231, 64);
+}
+
+#pixel-board {
+  margin-top: 70px;
+  width: 210px;
+  line-height: 0px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.pixel {
+  border: solid black 1px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+#color-palette {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#tools {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#clear-board {
+  color: white;
+  background-color: #d62828;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#generate-board {
+  color: white;
+  background-color: #106d51;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  width: 205px;
+  border: solid black 1px;
+  border-radius: 8px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  text-align: center;
+  margin-top: 90px;
+  height: 50px;
+}
