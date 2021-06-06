@@ -2,12 +2,12 @@ const paleta = document.querySelector('#color-palette');
 const quadro = document.querySelector('#pixel-board');
 const botao = document.createElement('button');
 const tools = document.querySelector('#tools');
+const subtools = document.querySelector('#sub-tools');
 const color = document.querySelectorAll('.color');
 const cores = ['red', 'blue', 'yellow', 'HotPink', 'orange', 'green', 'teal', 'Purple'];
 
 botao.setAttribute('id', 'clear-board');
 botao.innerText = 'Limpar quadro';
-tools.appendChild(botao);
 const input = document.createElement('input');
 input.setAttribute('id', 'board-size');
 input.setAttribute('type', 'number');
@@ -19,6 +19,7 @@ const defineboard = document.createElement('button');
 defineboard.setAttribute('id', 'generate-board');
 defineboard.innerText = 'Gerar novo quadro';
 tools.appendChild(defineboard);
+subtools.appendChild(botao);
 let size = 0;
 let aux = 0;
 
