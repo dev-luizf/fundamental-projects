@@ -71,7 +71,7 @@ function reset() {
 
 function invalid(tamanho) {
   if (tamanho === 0) {
-    alert('Board inválido!');
+    alert('Digite um número maior do que 4!');
   }
 }
 
