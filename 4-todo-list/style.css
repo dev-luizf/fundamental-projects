@@ -1,7 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  height: 100vh;
+}
+
 #selected {
-  background-color: gray;
+  background-color: #c5acd2;
 }
 
 .completed {
   text-decoration: line-through;
+}
+
+button {
+  border-radius: 20px;
+  padding: 2px 12px;
+  margin: 4px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+input {
+  width: 205px;
+  border: solid black 1px;
+  border-radius: 8px;
+  padding: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style: none;
+  width: 590px;
+  margin: 12px auto;
+  box-shadow: 3px 3px 3px black;
+  box-shadow: 0 2px 4px 1px rgba(114 , 114 , 114 , 0.404);
+  border: 1px solid rgb(250 , 250 , 250);
+}
+
+#remover-selecionado {
+  background-color: red;
+}
+
+#apaga-tudo {
+  background-color: red;
+}
+
+#criar-tarefa {
+  background-color: #026b52;
+}
+
+#salvar-tarefas {
+  background-color: #026b52;
+}
+
+#remover-finalizados {
+  background-color: red;
+}
+
+#mover-cima {
+  background-color: orange;
+  padding: -10px;
+}
+
+#mover-baixo {
+  background-color: orange;
+}
+
+footer {
+  height: 40px;
+  margin-top: 80px;
+}
+
+#tasks {
+  width: 80%;
+  margin: auto;
+  background-color: rgb(245, 245, 245);
+  padding: 30px;
+  border-radius: 1%;
+  margin-top: 50px;
+}
+
+li {
+  background-color: white;
 }

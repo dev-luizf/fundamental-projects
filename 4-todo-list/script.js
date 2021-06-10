@@ -4,14 +4,15 @@ const ol = document.createElement('ol');
 const input = document.querySelector('#texto-tarefa');
 let texto = '';
 const botaoDelete = document.createElement('button');
-const tools = document.querySelector('#tools');
 const botaoFinalizados = document.createElement('button');
 const botaoSave = document.createElement('button');
 const botaoExcluir = document.createElement('button');
 const botaoUp = document.createElement('button');
 const botaoDown = document.createElement('button');
+const tools = document.createElement('section');
 
 ol.id = 'lista-tarefas';
+tools.id = '#tools';
 botao.id = 'criar-tarefa';
 botao.innerText = 'Criar tarefa';
 botaoDelete.id = 'apaga-tudo';
@@ -21,31 +22,42 @@ botaoFinalizados.id = 'remover-finalizados';
 botaoSave.id = 'salvar-tarefas';
 botaoSave.innerText = 'Salvar lista';
 botaoExcluir.id = 'remover-selecionado';
-botaoExcluir.innerText = 'Excluir';
+botaoExcluir.innerText = 'Excluir selecionada';
 botaoUp.id = 'mover-cima';
-botaoUp.innerText = '↑';
+botaoUp.innerHTML = "<i class='bx bxs-up-arrow'></i>";
 botaoDown.id = 'mover-baixo';
-botaoDown.innerText = '↓';
+botaoDown.innerHTML = "<i class='bx bxs-down-arrow'></i>";
+tasks.appendChild(botao);
+tasks.appendChild(tools);
 tools.appendChild(botaoUp);
 tools.appendChild(botaoDown);
 tools.appendChild(botaoExcluir);
 tools.appendChild(botaoSave);
 tools.appendChild(botaoDelete);
 tools.appendChild(botaoFinalizados);
-tasks.appendChild(botao);
 tasks.appendChild(ol);
 
 function criaLi() {
-  const li = document.createElement('li');
-  li.innerText = texto;
-  li.className = 'item';
-  ol.appendChild(li);
+  if (texto.length < 1) {
+    alert('Campo vazio!')
+  } else {
+    const li = document.createElement('li');
+    li.innerText = texto;
+    li.className = 'item';
+    ol.appendChild(li);
+    
+  }
   input.value = '';
   texto = '';
 }
 
 function textoTarefa(event) {
-  texto = event.target.value;
+  if (event.target.value.length > 0) {
+    texto = event.target.value
+  }
+  if (event.keyCode === 13) {
+    criaLi();
+  }
 }
 
 function mudaCor(event) {
